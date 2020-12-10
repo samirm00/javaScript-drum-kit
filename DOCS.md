@@ -7,15 +7,12 @@
 <!-- BEGIN TOC -->
 
 - [handlers](#handlers)
-  - [artify.js](#srchandlersartifyjs)
-  - [change-separator.js](#srchandlerschange-separatorjs)
+  - [playSound.js](#srchandlerplaySoundjs)
+  - [removeTransition.js](#srchandlersremoveTransitionjs)
 - [listeners](#listeners)
-  - [change-separator.js](#srclistenerschange-separatorjs)
-  - [inputting.js](#srclistenersinputtingjs)
-- [logic](#logic)
-  - [reverse.js](#srclogicreversejs)
-- [data.js](#srcdatajs)
-- [init.js](#srcinitjs)
+  - [keydown.js](#srclistenerskeydownjs)
+  - [transitioned.js.js](#srclistenerstransitionedjs)
+
 
 <!-- END TOC -->
 
@@ -35,31 +32,31 @@ Handler function define user interactions. They will:
 
 ---
 
-### [./src/handlers/artify.js](./src/handlers/artify.js?study)
+### [./src/handlers/playSound.js](./src/handlers/playSound.js?study)
 
-<a name="artifyHandler"></a>
+<a name="playSoundHandler"></a>
 
-## artifyHandler
+## playSound.js
 
-creates a mirror-image rendering of the user input and displays the growing artwork
+creates a different sound when the user press the nine different keys 
 
 | Param | Type               | Description                                                |
 | ----- | ------------------ | ---------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user releases a key in the input area |
+| event | <code>Event</code> | triggered whenever a user press one of the nine keys |
 
 ---
 
-### [./src/handlers/change-separator.js](./src/handlers/change-separator.js?study)
+### [./src/handlers/removeTransition.js](./src/handlers/removeTransition.js?study)
 
-<a name="changeSeparatorHandler"></a>
+<a name="removeTransitionHandler"></a>
 
-## changeSeparatorHandler
+## removeTransitionHandler
 
-changes the program's separator value
+remove the transition form a key when it pressed again 
 
 | Param | Type               | Description                                                 |
 | ----- | ------------------ | ----------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user types in the separator input area |
+| event | <code>Event</code> | triggered whenever a user press the same key 
 
 [TOP](#DOCS)
 
@@ -75,60 +72,25 @@ You can use the same handler in many different listeners, or add more than one l
 
 ---
 
-### [./src/listeners/change-separator.js](./src/listeners/change-separator.js?study)
+### [./src/listeners/keyDown.js](./src/listeners/keyDown.js?study)
 
-<a name="change separator
+<a name="keydown 
 calls handler that changes the mirror-arts separator"></a>
 
-## change separator
+##  call the palySound function when a user press any of the nine keys 
 
-calls handler that changes the mirror-arts separator
+calls handler that changes that paly the sound 
 
 ---
 
-### [./src/listeners/inputting.js](./src/listeners/inputting.js?study)
+### [./src/listeners/transitioned.js](./src/listeners/transitioned?study)
 
-<a name="user input
+<a name="transitioned
 calls the reverseHandler when a user types in the input field"></a>
 
-## user input
+## call the removeTransition function when a user press the same key at very short period to stop the first sound allowing the playSound function to be called again
 
-calls the reverseHandler when a user types in the input field
-
-[TOP](#DOCS)
-
----
-
----
-
-# Logic
-
-Logic functions are pure functions. They take primitives, objects or arrays as arguments and they return primitives, objects or arrays. Handlers will use logic functions to transform user input.
-
-Logic functions will _never_ ...
-
-- read from the DOM
-- write to the DOM
-- use events
-- use prompt/alert/confirm
-- use variables that are not parameters
-- use variables that are not declared locally
-
----
-
-### [./src/logic/reverse.js](./src/logic/reverse.js?study)
-
-<a name="reverseLogic"></a>
-
-## reverseLogic ⇒ <code>string</code>
-
-reverses a string
-
-**Returns**: <code>string</code> - the string reversed
-
-| Param | Type                | Description         |
-| ----- | ------------------- | ------------------- |
-| input | <code>string</code> | a string to reverse |
+calls the reverseHandler when a user types the same key at short period 
 
 [TOP](#DOCS)
 
@@ -136,21 +98,6 @@ reverses a string
 
 ---
 
-## [./src/data.js](./src/data.js?study)
-
-<a name="data"></a>
-
-## data
-
-data that is saved and used between user interactionss
-
-**Properties**
-
-| Name      | Type                | Description           |
-| --------- | ------------------- | --------------------- |
-| mirrorArt | <code>string</code> | the full user artwork |
-
----
 
 ## [./src/init.js](./src/init.js?study)
 
