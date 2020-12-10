@@ -1,8 +1,11 @@
 'use strict';
 
-import { changeSeparatorHandler } from '../handlers/change-separator.js';
+import { removeTransition } from '../handlers/removeTransition.js';
 
 /**
- * @name change separator
- * calls handler that changes the mirror-art's separator
+ * @name stop the transition 
+ * calls handler that stop the transition 
  */
+
+const keys = Array.from(document.querySelectorAll('.key'));
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
