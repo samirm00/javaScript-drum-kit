@@ -29,7 +29,7 @@ A simple website allows the user to press nine different keys and listen to diff
 
 > how much work do you think this step will take?  medium 
 
-> User story1 :
+> The web page interface:
 
 - **As a user I want to open the `javaScript-drum-kit` so I can press keys and listen to the keys sound.**
 - When I open the web page `javaScript-drum-kit` I see 9 grey blackish square each one contains a letter and a word,
@@ -56,7 +56,7 @@ A simple website allows the user to press nine different keys and listen to diff
 
 - `style1.css`: style the background and each key , so they have square grey blackish background 
 
-## X. UserStory2 :
+## X.Play drum :
 
 > how much work do you think this step will take?  medium 
 
