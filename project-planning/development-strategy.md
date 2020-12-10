@@ -1,22 +1,27 @@
 # javaScript-drum-kit
 
-A simple website allows the user to press nine different keys and listen to different sound associated with changes in the size and border of the keys , when the user press different keys during short period  , he will hear a sound like a drum.
+A simple website allows the user to press nine different keys and listen to different sound associated with changes in the size and border of the keys , when the user press different keys during short period  ,the user will hear a sound like a drum.
 
 ---
 
 ## User Story Dependencies
 
-[Story Dependency Diagram](https://excalidraw.com/)
+[Story Dependency Diagram](../img/userStories.png)
 
 ---
 
 ## WIREFRAME
 
-![wireframe or figma]()
+![wireframe or figma](../img/wireFrame.png)
 
 ---
 
 ## 0.Setup
+
+- fork the `javaScript30-starter`
+- create a project board
+- create milestones and issues
+
 
 ---
 
@@ -74,13 +79,24 @@ A simple website allows the user to press nine different keys and listen to diff
 
 ### DOM 
 
-- `index.html`: 
+- `index.html`: create `span` for each `div` child with class sound.
+- create `audio` element with the source and `data-key`
+- add links to the `init.js`
 
 ### style
 
 - `style1.css`:
-- Add transition properties to the keys class and add playing class so when the a key is pressed  it will change the size and border  - - class playing to be used by `js` to trigger the sound 
+- Add transition properties to the keys class and add playing class so when the a key is pressed  it will change the size and border 
+- add class `playing` to use with functions and class `class sound` to style the word 
 
 ### JavaScript
 
-- `style1.css`: style the background and each key , so the have square grey blackish background 
+- craete folder `handlers`
+- add `playSound.js` file contains a function `playSound()`
+- add `removeTransition.js` file contains a function `removeTransition()`
+
+
+- craete folder `listeners`
+- add `keydown.js` file contains an even listener call the function  `playSound()`
+- add `transitioned.js /` file contains an even listener call the function  `removeTransition()`
+- 

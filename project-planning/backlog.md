@@ -4,10 +4,10 @@ A collection of user stories you can choose from. Stories inside of each priorit
 
 ## Must-Haves
 
-> User story1 :
+> The drum-kit interface :
 
 - As a user I want to open the `javaScript-drum-kit` so I can press keys and listen to the keys sound.
-- When I open the web page `javaScript-drum-kit` I see 9 grey blackish square each one contains a letter and a word,
+- When I open the web page `javaScript-drum-kit` I see 9 grey blackish square buttons, each one contains a letter and a word,
   
 - first one contain the letter 'A' and the word 'CLAB'
 - second one contain the letter 'S' and the word 'HIHAT'
@@ -20,7 +20,7 @@ A collection of user stories you can choose from. Stories inside of each priorit
 - last one contain the letter 'L' and the word 'TINK'
   
 
- > User story2 :
+ > Play drum-kit :
 
  - As a user I want to press the 9 keys so I can  play and listen  to different music with related to each key
  - When I press the 'A' key , I hear the sound 'CLAB' and the key move , size and border change.
