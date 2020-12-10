@@ -7,12 +7,12 @@
 <!-- BEGIN TOC -->
 
 - [handlers](#handlers)
-  - [playSound.js](#srchandlerplaySoundjs)
+  - [playSound.js](#srchandlersplaySoundjs)
   - [removeTransition.js](#srchandlersremoveTransitionjs)
 - [listeners](#listeners)
   - [keydown.js](#srclistenerskeydownjs)
-  - [transitioned.js.js](#srclistenerstransitionedjs)
-
+  - [transitioned.js](#srclistenerstransitionedjs)
+- [init.js](#srcinitjs)
 
 <!-- END TOC -->
 
@@ -34,29 +34,9 @@ Handler function define user interactions. They will:
 
 ### [./src/handlers/playSound.js](./src/handlers/playSound.js?study)
 
-<a name="playSoundHandler"></a>
-
-## playSound.js
-
-creates a different sound when the user press the nine different keys 
-
-| Param | Type               | Description                                                |
-| ----- | ------------------ | ---------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user press one of the nine keys |
-
 ---
 
 ### [./src/handlers/removeTransition.js](./src/handlers/removeTransition.js?study)
-
-<a name="removeTransitionHandler"></a>
-
-## removeTransitionHandler
-
-remove the transition form a key when it pressed again 
-
-| Param | Type               | Description                                                 |
-| ----- | ------------------ | ----------------------------------------------------------- |
-| event | <code>Event</code> | triggered whenever a user press the same key 
 
 [TOP](#DOCS)
 
@@ -72,32 +52,31 @@ You can use the same handler in many different listeners, or add more than one l
 
 ---
 
-### [./src/listeners/keyDown.js](./src/listeners/keyDown.js?study)
+### [./src/listeners/keydown.js](./src/listeners/keydown.js?study)
 
-<a name="keydown 
-calls handler that changes the mirror-arts separator"></a>
+<a name="user input
+calls the reverseHandler when a user types in the input field"></a>
 
-##  call the palySound function when a user press any of the nine keys 
+## user input
 
-calls handler that changes that paly the sound 
+calls the reverseHandler when a user types in the input field
 
 ---
 
-### [./src/listeners/transitioned.js](./src/listeners/transitioned?study)
+### [./src/listeners/transitioned.js](./src/listeners/transitioned.js?study)
 
-<a name="transitioned
-calls the reverseHandler when a user types in the input field"></a>
+<a name="change separator
+calls handler that changes the mirror-arts separator"></a>
 
-## call the removeTransition function when a user press the same key at very short period to stop the first sound allowing the playSound function to be called again
+## change separator
 
-calls the reverseHandler when a user types the same key at short period 
+calls handler that changes the mirror-arts separator
 
 [TOP](#DOCS)
 
 ---
 
 ---
-
 
 ## [./src/init.js](./src/init.js?study)
 
