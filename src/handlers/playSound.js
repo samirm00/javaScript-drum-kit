@@ -6,7 +6,7 @@
  * @param {Event} event - triggered whenever a user press one of the nine keys 
  */
 
-export function playSound(e) {
+ export function playSound(e) {
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
