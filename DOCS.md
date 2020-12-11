@@ -54,7 +54,7 @@ You can use the same handler in many different listeners, or add more than one l
 
 ### [./src/listeners/keydown.js](./src/listeners/keydown.js?study)
 
-<a name="user input
+<a name="user type"
 calls the reverseHandler when a user types in the input field"></a>
 
 ## user input
@@ -68,9 +68,9 @@ calls the reverseHandler when a user types in the input field
 <a name="change separator
 calls handler that changes the mirror-arts separator"></a>
 
-## change separator
+## transitionend
 
-calls handler that changes the mirror-arts separator
+calls handler that to stop playSound
 
 [TOP](#DOCS)
 
