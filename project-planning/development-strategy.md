@@ -12,7 +12,7 @@ A simple website allows the user to press nine different keys and listen to diff
 
 ## WIREFRAME
 
-![wireframe or figma](../img/wireFrame.png)
+[figma](https://www.figma.com/file/xcXBAGb12sv8HgGN7C69fw/javaScript-drum-kit?node-id=0%3A1)
 
 ---
 
